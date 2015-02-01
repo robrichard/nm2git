@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var program = require('commander');
+var npm2git = require('../index');
+var version = require('../package.json').version;
+
+program
+    .version(version)
+    .usage('<package> [branch]')
+    .option('-v, --verbose', 'verbose output');
+
+program.parse(process.argv);
+
+if(!program.args.length) {
+    program.help();
+}
+
+npm2git(program.args[0], program.args[1], {
+    verbose: program.verbose
+});

@@ -1,0 +1,31 @@
+{
+  "name": "npm2git",
+  "version": "0.1.0",
+  "description": "A command line utility to turn a node_module package into a git repository",
+  "bin": {
+    "npm2git": "bin/npm2git"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robrichard/nm2git.git"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "node_modules",
+    "repository",
+    "vcs"
+  ],
+  "author": "Rob Richard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robrichard/npm2git/issues"
+  },
+  "homepage": "https://github.com/robrichard/npm2git",
+  "dependencies": {
+    "child-process-promise": "^1.0.1",
+    "colors": "^1.0.3",
+    "commander": "^2.6.0"
+  }
+}
